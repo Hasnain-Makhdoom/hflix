@@ -44,3 +44,5 @@ Thumbs.db
 #firebase config
 firebase-config.ts
 tmdb-api.ts
+.firebase
+.firebaserc
