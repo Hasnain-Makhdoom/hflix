@@ -5,6 +5,7 @@ import { MoviesService } from '../../services/movies.service';
 
 @Component({
   selector: 'app-movie-details',
+  standalone: true,
   templateUrl: './movie-details.component.html',
   styleUrls: ['./movie-details.component.scss']
 })

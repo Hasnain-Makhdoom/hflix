@@ -5,6 +5,7 @@ import { MoviesService } from '../../services/movies.service';
 
 @Component({
   selector: 'app-search',
+  standalone: true,
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })

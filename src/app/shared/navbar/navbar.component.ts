@@ -5,6 +5,7 @@ import { User } from 'firebase/auth';
 
 @Component({
   selector: 'app-navbar',
+  standalone: true,
   templateUrl: './navbar.component.html',
   styleUrls: [ './navbar.component.scss' ]
 })
