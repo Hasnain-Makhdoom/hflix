@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { MoviesService } from '../../services/movies.service';
-import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-movie-details',
   standalone: true,
-  imports: [NgIf, NgFor],
+  imports: [],
   templateUrl: './movie-details.component.html',
   styleUrls: ['./movie-details.component.scss']
 })
