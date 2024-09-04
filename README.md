@@ -1,27 +1,24 @@
-# Hflix
+# Hflix a Netflix clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+This is a clone of Netflix application built on Angular version 18.2.0. This project utilizes the power of TMDB for movie search, movie listing and much more. This is currently just a basic website with few features with potiential to grow more.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To see the live/demo version of the above code please visit the below website:
 
-## Code scaffolding
+ `https://hflix-2244.web.app`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies used
 
-## Build
+Following are the technologies which are used in this application:
+Angular 18 (standalone application)
+TMDB (for movies listing and searching)
+Rxjs (for asychronous data as it is not a complex app so no need for Ngrx State Management)
+Firebase (for authentication and hosting)
+Angular Routing (for navigation and RouterGuards)
+@For and @If (instead of ngfor and ngIf)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Future plans
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Will focus on app optimization using different techniques like lazy loading and infinite scroll. And will also improve styles as needed.
