@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { Movie } from '../../interfaces/movies';
 import { MoviesService } from '../../services/movies.service';
 import { UserService } from '../../services/user.service';
+import { MoviesSliderComponent } from '../movies-slider/movies-slider.component';
+import { CommonModule, NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [MoviesSliderComponent, NgIf, NgFor, RouterLink],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
