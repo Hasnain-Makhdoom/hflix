@@ -6,90 +6,108 @@
     <div class="row">
       <h3 class="text-white">Trending Movies</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let t of trendingMoviesResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',t.id]">
-        </ng-container>
+        @for (t of trendingMoviesResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',t.id]">
+          </ng-container>
+        }
       </div>
     </div>
 
     <div class="row mt-4">
       <h3 class="text-white">Discover Movies</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let d of discoverMoviesResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ d.poster_path }}" class="rowimg largeposter"
-            alt="..." [routerLink]="['/movie',d.id]">
-        </ng-container>
+        @for (d of discoverMoviesResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ d.poster_path }}" class="rowimg largeposter"
+              alt="..." [routerLink]="['/movie',d.id]">
+          </ng-container>
+        }
       </div>
     </div>
 
     <div class="row mt-4">
       <h3 class="text-white">Thriller Movies</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let th of thrillerMovieResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ th.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',th.id]">
-        </ng-container>
+        @for (th of thrillerMovieResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ th.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',th.id]">
+          </ng-container>
+        }
       </div>
     </div>
 
     <div class="row mt-4">
       <h3 class="text-white">Action</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let a of actionMovieResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',a.id]">
-        </ng-container>
+        @for (a of actionMovieResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',a.id]">
+          </ng-container>
+        }
       </div>
     </div>
 
     <div class="row mt-4">
       <h3 class="text-white">Adventure</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let a of adventureMovieResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',a.id]">
-        </ng-container>
+        @for (ad of adventureMovieResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ ad.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',ad.id]">
+          </ng-container>
+        }
       </div>
     </div>
 
     <div class="row mt-4">
       <h3 class="text-white">Animation</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let a of animationMovieResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',a.id]">
-        </ng-container>
+        @for (a of animationMovieResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',a.id]">
+          </ng-container>
+        }
       </div>
     </div>
 
     <div class="row mt-4">
       <h3 class="text-white">Comedies</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let c of comedyMovieResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ c.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',c.id]">
-        </ng-container>
+        @for (c of comedyMovieResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ c.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',c.id]">
+          </ng-container>
+        }
       </div>
     </div>
 
     <div class="row mt-4">
       <h3 class="text-white">Documentaries</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let d of documentaryMovieResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ d.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',d.id]">
-        </ng-container>
+        @for (d of documentaryMovieResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ d.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',d.id]">
+          </ng-container>
+        }
       </div>
     </div>
 >
     <div class="row mt-4">
       <h3 class="text-white">Science-Fiction</h3>
       <div class="rowposter mt-3 p-2">
-        <ng-container *ngFor="let sf of sciencefictionMovieResults">
-          <img src="https://image.tmdb.org/t/p/original/{{ sf.poster_path }}"
-            class="rowimg largeposter" alt="..." [routerLink]="['/movie',sf.id]">
-        </ng-container>
+        @for (sf of sciencefictionMovieResults; track $index) {
+          <ng-container>
+            <img src="https://image.tmdb.org/t/p/original/{{ sf.poster_path }}"
+              class="rowimg largeposter" alt="..." [routerLink]="['/movie',sf.id]">
+          </ng-container>
+        }
       </div>
     </div>
   </div>

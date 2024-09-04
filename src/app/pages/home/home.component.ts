@@ -5,12 +5,11 @@ import { Movie } from '../../interfaces/movies';
 import { MoviesService } from '../../services/movies.service';
 import { UserService } from '../../services/user.service';
 import { MoviesSliderComponent } from '../movies-slider/movies-slider.component';
-import { CommonModule, NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MoviesSliderComponent, NgIf, NgFor, RouterLink],
+  imports: [MoviesSliderComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
@@ -42,14 +41,14 @@ export class HomeComponent implements OnInit {
 
   trendingMovies () {
     this.moviesService.getTrendingMovies().subscribe((result) => {
-      console.log(result, 'trendingresult#');
+      // console.log(result, 'trendingresult#');
       this.trendingMoviesResults = result.results;
     });
   }
 
   discoverMovies () {
     this.moviesService.getDiscoverMovies().subscribe((result) => {
-      console.log(result, 'discoverresult#');
+      // console.log(result, 'discoverresult#');
       this.discoverMoviesResults = result.results;
     });
   }

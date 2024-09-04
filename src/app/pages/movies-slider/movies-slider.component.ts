@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../../services/movies.service';
-import { NgClass, NgFor, NgIf } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-movies-slider',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass],
+  imports: [NgClass],
   templateUrl: './movies-slider.component.html',
   styleUrls: ['./movies-slider.component.scss']
 })
